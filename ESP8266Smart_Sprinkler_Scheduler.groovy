@@ -387,7 +387,7 @@ def water(attempts) {
     if(Prog1ZoneTimes()) {
         def zoneTimes = []
         for(int z = 1; z <= 8; z++) {
-            def zoneTime = settings["zone${z}"]
+            def zoneTime = settings["prog1zone${z}"]
             if(zoneTime) {
                 zoneTimes += "${z}:${zoneTime}"
                 log.info("Zone ${z} on for ${zoneTime} minutes")
